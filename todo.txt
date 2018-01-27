@@ -1,0 +1,7 @@
+Franz install
+Netextender Install
+net-tools install before netextender
+spotify install
+
+Download my keys from somewhere
+Download Profile from somewhere

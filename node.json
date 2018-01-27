@@ -1,0 +1,65 @@
+{
+  "atom_packages": [
+    "autocomplete-java",
+    "autocomplete-ruby",
+    "file-icons",
+    "git-plus",
+    "git-time-machine",
+    "go-debug",
+    "go-plus",
+    "go-signature-statusbar",
+    "language-chef",
+    "language-groovy",
+    "language-hcl",
+    "language-inspec",
+    "language-salt",
+    "language-terraform",
+    "linter",
+    "linter-js-yaml",
+    "linter-rubocop",
+    "linter-ruby",
+    "linter-shellcheck",
+    "linter-terraform-syntax",
+    "nuclide",
+    "pretty-json",
+    "project-manager",
+    "python-tools",
+    "atom-terminal",
+    "xml-formatter"
+  ],
+  "base_packages": [
+    "filezilla",
+    "gconf2",
+    "git",
+    "remmina",
+    "openjdk-8-jdk",
+    "openjdk-9-jdk",
+    "docker-ce",
+    "google-chrome-stable",
+    "zsh",
+    "jq",
+    "golang-1.9-go"
+  ],
+  "custom_packages": {
+    "atom": { "source": "https://atom.io/download/deb" }
+  },
+  "custom_repos": {
+    "openjdk-r": { "uri": "ppa:openjdk-r/ppa", "codename": "xenial" },
+    "docker": {
+      "uri": "https://download.docker.com/linux/ubuntu",
+      "key": "https://download.docker.com/linux/ubuntu/gpg",
+      "arch": "amd64",
+      "components": ["stable"]
+    },
+    "golang-go": { "uri": "ppa:gophers/archive" },
+    "google-chrome": {
+      "uri": "http://dl.google.com/linux/chrome/deb/",
+      "key": "https://dl-ssl.google.com/linux/linux_signing_key.pub",
+      "arch": "amd64",
+      "codename": " ",
+      "components": ["stable", "main"] 
+    }
+  },
+  "run_list": [ "recipe[init_workstation::default]" ]
+}
+
