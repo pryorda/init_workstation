@@ -1,7 +1,10 @@
-Franz install
 Netextender Install
-net-tools install before netextender
-spotify install
+Terraform
+
+
+install rsense gem, create symlink for gem utility.
+
+
 
 Download my keys from somewhere
 Download Profile from somewhere

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 name 'init_workstation'
 maintainer_email 'pryorda@gmail.com'
 license 'All Rights Reserved'
@@ -17,3 +19,5 @@ chef_version '>= 12.1' if respond_to?(:chef_version)
 # a Supermarket.
 #
 # source_url 'https://github.com/<insert_org_here>/init_workstation'
+
+depends 's3_file'

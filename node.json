@@ -1,5 +1,6 @@
 {
   "atom_packages": [
+    "atom-terminal",
     "autocomplete-java",
     "autocomplete-ruby",
     "file-icons",
@@ -24,24 +25,27 @@
     "pretty-json",
     "project-manager",
     "python-tools",
-    "atom-terminal",
     "xml-formatter"
   ],
   "base_packages": [
+    "docker-ce",
     "filezilla",
     "gconf2",
     "git",
-    "remmina",
+    "golang-1.9-go",
+    "google-chrome-stable",
+    "jq",
+    "net-tools",
     "openjdk-8-jdk",
     "openjdk-9-jdk",
-    "docker-ce",
-    "google-chrome-stable",
-    "zsh",
-    "jq",
-    "golang-1.9-go"
+    "remmina",
+    "shellcheck",
+    "spotify-client",
+    "zsh"
   ],
   "custom_packages": {
-    "atom": { "source": "https://atom.io/download/deb" }
+    "atom": { "source": "https://atom.io/download/deb" },
+    "franz": { "source": "https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.15/franz_5.0.0-beta.15_amd64.deb" }
   },
   "custom_repos": {
     "openjdk-r": { "uri": "ppa:openjdk-r/ppa", "codename": "xenial" },
@@ -57,9 +61,30 @@
       "key": "https://dl-ssl.google.com/linux/linux_signing_key.pub",
       "arch": "amd64",
       "codename": " ",
-      "components": ["stable", "main"] 
+      "components": ["stable", "main"]
+    },
+    "spotify": {
+      "uri": "http://repository.spotify.com",
+      "codename": "",
+      "components": ["stable", "non-free"],
+      "key": "0DF731E45CE24F27EEEB1450EFDC8610341D9410",
+      "keyserver": "keyserver.ubuntu.com"
+    }
+  },
+  "remote_files": {
+    "minio_client": {
+      "source": "https://dl.minio.io/client/mc/release/linux-amd64/mc",
+      "destination": "/usr/bin/mc",
+      "mode": "755"
+    }
+  },
+  "s3_files": {
+    "NetExtender.tgz": {
+      "source": "/VPN/NetExtender.Linux.8.1.789.x86_64.tgz",
+      "bucket": "general",
+      "s3_url": "https://minio.pryorda.net/general",
+      "ignore_failure": true
     }
   },
   "run_list": [ "recipe[init_workstation::default]" ]
 }
-
