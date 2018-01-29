@@ -6,4 +6,4 @@ dpkg -l |grep -q chefdk || sudo dpkg -i /tmp/chefdk_${VERSION}-1_amd64.deb
 grep -q "shell-init" ~/.bash_profile || echo 'eval "$(chef shell-init bash)"' >> ~/.bash_profile
 cd cookbooks/init_workstation || exit && berks vendor ../ ; cd - || exit 1
 sudo -E chef-solo -c "$(pwd)"/solo.rb -j "$(pwd)"/node.json
-sudo rm -rf https* chef-client* nodes remote_file local-mode-cache
+sudo rm -rf https* chef-client* nodes remote_file local-mode-cache cookbooks/init_workstation/metadata.json cookbooks/s3_file

@@ -10,5 +10,6 @@
 include_recipe 'init_workstation::custom_repos'
 include_recipe 'init_workstation::packages'
 include_recipe 'init_workstation::atom_packages'
+include_recipe 'init_workstation::gems'
 include_recipe 'init_workstation::remote_files'
 include_recipe 'init_workstation::user_configuration'

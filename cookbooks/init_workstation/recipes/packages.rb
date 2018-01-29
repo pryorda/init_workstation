@@ -12,13 +12,27 @@ node['base_packages'].each do |p|
 end
 
 node['custom_packages'].each_pair do |p, details|
-  remote_file "/tmp/#{p}.deb" do
+  remote_file "/tmp/#{p}.#{details['type']}" do
     source details.fetch('source', nil)
     mode 0o644
     checksum details.fetch('checksum', nil)
   end
 
-  dpkg_package p do
-    source "/tmp/#{p}.deb"
+  type = details['type']
+  case type
+  when 'zip'
+    execute "extract #{p}" do
+      cwd '/tmp'
+      command "unzip /tmp/#{p}.#{details['type']}"
+      action :run
+    end
+    execute "install #{p}" do
+      command "mv /tmp/#{p} /usr/bin/"
+      action :run
+    end
+  else
+    dpkg_package p do
+      source "/tmp/#{p}.deb"
+    end
   end
 end

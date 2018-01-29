@@ -41,11 +41,34 @@
     "remmina",
     "shellcheck",
     "spotify-client",
+    "unzip",
     "zsh"
   ],
   "custom_packages": {
-    "atom": { "source": "https://atom.io/download/deb" },
-    "franz": { "source": "https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.15/franz_5.0.0-beta.15_amd64.deb" }
+    "atom": {
+      "source": "https://atom.io/download/deb",
+      "type": "deb"
+    },
+    "consul": {
+      "source": "https://releases.hashicorp.com/consul/1.0.3/consul_1.0.3_linux_amd64.zip",
+      "type": "zip"
+    },
+    "franz": {
+      "source": "https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.15/franz_5.0.0-beta.15_amd64.deb",
+      "type": "deb"
+    },
+    "packer": {
+      "source": "https://releases.hashicorp.com/packer/1.1.3/packer_1.1.3_linux_amd64.zip",
+      "type": "zip"
+    },
+    "terraform": {
+      "source": "https://releases.hashicorp.com/terraform/0.11.2/terraform_0.11.2_linux_amd64.zip",
+      "type": "zip"
+    },
+    "vault": {
+      "source": "https://releases.hashicorp.com/vault/0.9.3/vault_0.9.3_linux_amd64.zip",
+      "type": "zip"
+    }
   },
   "custom_repos": {
     "openjdk-r": { "uri": "ppa:openjdk-r/ppa", "codename": "xenial" },
@@ -77,6 +100,10 @@
       "destination": "/usr/bin/mc",
       "mode": "755"
     }
+  },
+  "gems":{
+    "rsense": ">= 0.5.18",
+    "rubocop": ">= 0.49.1"
   },
   "s3_files": {
     "NetExtender.tgz": {
