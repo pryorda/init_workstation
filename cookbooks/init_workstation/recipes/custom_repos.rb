@@ -17,4 +17,14 @@ node['custom_repos'].each_pair do |ppa, details|
   end
 end
 
+execute 'add multiverse' do
+  command 'apt-add-repository -y multiverse'
+  action :run
+end
+
+execute 'add universe' do
+  command 'apt-add-repository -y universe'
+  action :run
+end
+
 apt_update

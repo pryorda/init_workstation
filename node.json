@@ -29,6 +29,7 @@
   ],
   "base_packages": [
     "docker-ce",
+    "duply",
     "filezilla",
     "gconf2",
     "git",
@@ -36,12 +37,19 @@
     "google-chrome-stable",
     "jq",
     "net-tools",
+    "nmap",
     "openjdk-8-jdk",
     "openjdk-9-jdk",
+    "python-boto",
     "remmina",
     "shellcheck",
     "spotify-client",
     "unzip",
+    "vagrant",
+    "virtualbox",
+    "virtualbox-dkms",
+    "virtualbox-ext-pack",
+    "woeusb",
     "zsh"
   ],
   "custom_packages": {
@@ -92,7 +100,8 @@
       "components": ["stable", "non-free"],
       "key": "0DF731E45CE24F27EEEB1450EFDC8610341D9410",
       "keyserver": "keyserver.ubuntu.com"
-    }
+    },
+    "webupd8": { "uri": "ppa:nilarimogard/webupd8", "codename": "xenial" }
   },
   "remote_files": {
     "minio_client": {
