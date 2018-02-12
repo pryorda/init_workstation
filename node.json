@@ -28,6 +28,8 @@
     "xml-formatter"
   ],
   "base_packages": [
+    "awscli",
+    "curl",
     "docker-ce",
     "duply",
     "filezilla",
@@ -70,7 +72,7 @@
       "type": "zip"
     },
     "terraform": {
-      "source": "https://releases.hashicorp.com/terraform/0.11.2/terraform_0.11.2_linux_amd64.zip",
+      "source": "https://releases.hashicorp.com/terraform/0.10.7/terraform_0.10.7_linux_amd64.zip",
       "type": "zip"
     },
     "vault": {

@@ -1,10 +1,9 @@
-Netextender Install
-Terraform
-
-
-install rsense gem, create symlink for gem utility.
+Prompt about install NetExtender
+Download Docker-Compose
+Install Gems.
+Install lastpass-cli
+Install http://multibootusb.org/page_download/
+sudo apt-get install qemu-kvm qemu virt-manager virt-viewer libvirt-bin
 
 Download my keys from somewhere
 Download Profile from somewhere
-
-sudo add-apt-repository ppa:nilarimogard/webupd8
