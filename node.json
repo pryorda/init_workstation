@@ -1,8 +1,11 @@
 {
+  "apt_upgrade": true,
   "atom_packages": [
-    "atom-terminal",
+    "platformio-ide-terminal",
     "autocomplete-java",
     "autocomplete-ruby",
+    "auto-run",
+    "env-from-shell",
     "file-icons",
     "git-plus",
     "git-time-machine",
@@ -45,16 +48,20 @@
     "openvpn",
     "openjdk-8-jdk",
     "openjdk-9-jdk",
+    "powertop",
+    "pm-utils",
     "python-boto",
+    "python-pip",
     "remmina",
     "shellcheck",
+    "sni-qt",
     "spotify-client",
     "unzip",
-    "vagrant",
     "virtualbox",
     "virtualbox-dkms",
     "virtualbox-ext-pack",
     "woeusb",
+    "xserver-xorg-video-intel",
     "zsh"
   ],
   "custom_packages": {
@@ -95,6 +102,7 @@
       "arch": "amd64",
       "components": ["stable"]
     },
+    "duplicity": {"uri": "ppa:duplicity-team/ppa"},
     "golang-go": { "uri": "ppa:gophers/archive" },
     "google-chrome": {
       "uri": "http://dl.google.com/linux/chrome/deb/",
@@ -103,6 +111,7 @@
       "codename": " ",
       "components": ["stable", "main"]
     },
+    "oibaf-graphic-drivers": { "uri": "ppa:oibaf/graphics-drivers" },
     "spotify": {
       "uri": "http://repository.spotify.com",
       "codename": "",

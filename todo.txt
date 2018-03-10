@@ -1,8 +1,13 @@
-Prompt about install NetExtender
+Extract and Install NetExtender
 Download Docker-Compose
 Install Gems.
-Install lastpass-cli
 Install http://multibootusb.org/page_download/
+Install PIP for codemod
+go get -d github.com/minio/mc instead of downloading it
+Install vagrant zip
+Install govc
+Install vmware-vsphere-cli
+
 sudo apt-get install qemu-kvm qemu virt-manager virt-viewer libvirt-bin
 
 Download my keys from somewhere

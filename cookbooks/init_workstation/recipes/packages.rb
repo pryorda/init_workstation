@@ -36,3 +36,10 @@ node['custom_packages'].each_pair do |p, details|
     end
   end
 end
+
+if node['apt_upgrade'] == true
+  execute 'apt_upgrade' do
+    command 'apt upgrade -y'
+    action :run
+  end
+end
